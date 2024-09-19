@@ -184,3 +184,55 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+
+/* Show Mobile Menu Icon on Small Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide regular navigation links */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show menu on toggle */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show menu icon */
+    }
+}
+
+/* Hide Navbar Links on Mobile */
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Menu Icon Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
