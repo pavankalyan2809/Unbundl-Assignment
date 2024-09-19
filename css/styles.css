@@ -10,39 +10,42 @@ body {
 header {
     background-color: none;
     color: #646262;
-    padding: 0px ;
+    padding: 5px ;
     border-bottom: 2px solid #fff; /* Thicker border for the header */
 }
 
+/* General Navbar Styles */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
+    background-color: white;
+    color: #fff;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
+/* Navbar Links */
 .nav-links {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    color: #646262;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-links li {
-    display: inline;
+    margin: 0 15px;
 }
 
 .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: #646262;
+    font-size: 1rem;
 }
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
 
 /* Hero Section Styles */
 .hero {
@@ -223,18 +226,50 @@ html {
     text-decoration: underline;
 }
 
+
 /* Mobile Menu Icon Styles */
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    color:#646262;
 }
 
 .menu-toggle span {
-    background-color: #646262;
+    background-color: #fff; /* White color for the menu icon lines */
     height: 3px;
     width: 25px;
     margin: 3px 0;
     transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide regular navigation links on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333; /* Background color for the mobile menu */
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        border-top: 1px solid #ddd; /* Optional border for visual separation */
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show menu on toggle */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Margin for mobile menu items */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show menu icon on mobile */
+    }
+}
+
+.logo {
+    color:#646262;
+    font-weight:bold;
 }
