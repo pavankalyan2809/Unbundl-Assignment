@@ -31,7 +31,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    color: #646262;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -41,7 +41,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #646262;
+    color: black;
 }
 
 /* Hero Section Styles */
@@ -178,6 +178,18 @@ footer {
 @media (max-width: 480px) {
     .features {
         grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        color:black /* Single column on very small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        color:black; /* Two columns on smaller screens */
     }
 }
 
