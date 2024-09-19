@@ -15,10 +15,13 @@ header {
 }
 
 nav {
-    background-color: white;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
 .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -290,7 +293,7 @@ html {
 }
 
 .menu-toggle {
-    display: none;
+    display:flex;
 }
 
 /* Show menu toggle button on mobile */
