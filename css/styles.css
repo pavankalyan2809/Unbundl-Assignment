@@ -182,7 +182,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .mobile {
+    .mobiless {
         color:black /* Single column on very small screens */
     }
 }
