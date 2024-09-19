@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: none;
+    color: #646262;
+    padding: 0px ;
+    border-bottom: 2px solid #fff; /* Thicker border for the header */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #646262;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('../images/hero.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Full viewport height for a more immersive look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+
+
+/* Content Section Styles (About) */
+.content {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd; /* Top border for the about section */
+}
+
+/* Features Section Styles */
+.features {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px; /* Max width for the features section */
+    margin: 0 auto; /* Center horizontally */
+    border-top: 1px solid #ddd; /* Top border for the features section */
+}
+
+.feature-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    margin: 0;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd; /* Top border for the contact section */
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-item {
+    flex: 1 1 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-item h3 {
+    margin-top: 0;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #333; /* Thicker border for the footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
