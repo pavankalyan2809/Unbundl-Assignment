@@ -8,44 +8,41 @@ body {
 
 /* Header Styles */
 header {
-    background-color: none;
+    background-color: white;
     color: #646262;
-    padding: 5px ;
+    padding: 0px ;
     border-bottom: 2px solid #fff; /* Thicker border for the header */
 }
 
-/* General Navbar Styles */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    background-color: white;
-    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-/* Navbar Links */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    color: #646262;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    display: inline;
 }
 
 .nav-links a {
-    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    color: #646262;
 }
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
 
 /* Hero Section Styles */
 .hero {
@@ -267,9 +264,4 @@ html {
     .menu-toggle {
         display: flex; /* Show menu icon on mobile */
     }
-}
-
-.logo {
-    color:#646262;
-    font-weight:bold;
 }
