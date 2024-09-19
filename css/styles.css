@@ -15,12 +15,8 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 .logo {
@@ -31,18 +27,25 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    color: black;
+    justify-content:center;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-links li {
-    display: inline;
+    margin: 0 15px;
 }
 
 .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: black;
+    font-size: 1rem;
 }
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
 
 /* Hero Section Styles */
 .hero {
@@ -181,17 +184,6 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    .mobiless {
-        color:black /* Single column on very small screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .mobiles {
-        color:black; /* Two columns on smaller screens */
-    }
-}
 
 /* Smooth Scroll */
 html {
@@ -257,7 +249,7 @@ html {
         display: none; /* Hide regular navigation links on mobile */
         flex-direction: column;
         width: 100%;
-        background-color: #333; /* Background color for the mobile menu */
+        background-color: #686262; /* Background color for the mobile menu */
         position: absolute;
         top: 60px; /* Adjust based on header height */
         left: 0;
@@ -282,6 +274,34 @@ html {
     text-align:center;
 }
 
-.icons {
-    color:#686262;
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Hide the menu by default on mobile */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show menu when toggle class is active */
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Show menu toggle button on mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background-color: #686262;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1rem;
+    }
 }
