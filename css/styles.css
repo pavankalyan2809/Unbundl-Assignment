@@ -8,7 +8,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: white;
+    background-color: none;
     color: #646262;
     padding: 0px ;
     border-bottom: 2px solid #fff; /* Thicker border for the header */
@@ -224,6 +224,21 @@ html {
 }
 
 
+/* Mobile Menu Icon Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff; /* White color for the menu icon lines */
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
 
 @media (max-width: 768px) {
     .nav-links {
@@ -249,4 +264,12 @@ html {
     .menu-toggle {
         display: flex; /* Show menu icon on mobile */
     }
+}
+
+.cont {
+    text-align:center;
+}
+
+.icons {
+    color:#686262;
 }
