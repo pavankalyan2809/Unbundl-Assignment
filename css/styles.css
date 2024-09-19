@@ -182,13 +182,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .nav-links {
+    .mobile {
         color:black /* Single column on very small screens */
     }
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+    .mobiles {
         color:black; /* Two columns on smaller screens */
     }
 }
